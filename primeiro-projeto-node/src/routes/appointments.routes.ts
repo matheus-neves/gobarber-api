@@ -21,6 +21,7 @@ appointmentsRouter.post('/', (request, response) => {
     const createAppointment = new CreateAppointmentService(
       appointmentsRepository,
     );
+
     const appointment = createAppointment.execute({
       provider,
       date: parsedDate,
