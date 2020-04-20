@@ -18,7 +18,7 @@ sessionsRouter.post('/', async (request, response, next) => {
 
     return response.json({ user, token });
   } catch (err) {
-    return response.status(400).json({ message: err.message });
+    return response.status(err.statusCode).json({ message: err.message });
   }
 });
 
