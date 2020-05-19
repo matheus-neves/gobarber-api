@@ -12,7 +12,7 @@ export default class UsersRepository implements IUsersRepository {
 
   public async findById(user_id: string): Promise<User | undefined> {
     const user = await this.ormUser.findOne({
-      where: { user_id },
+      where: { id: user_id },
     });
 
     return user;
