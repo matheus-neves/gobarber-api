@@ -11,6 +11,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@types/redis": "^2.8.22",
     "aws-sdk": "^2.684.0",
     "bcryptjs": "^2.4.3",
     "celebrate": "^12.1.1",
@@ -30,6 +31,8 @@
     "multer": "^1.4.2",
     "nodemailer": "^6.4.6",
     "pg": "^8.0.2",
+    "rate-limiter-flexible": "^2.1.6",
+    "redis": "^3.0.2",
     "reflect-metadata": "^0.1.13",
     "tsyringe": "^4.2.0",
     "typeorm": "^0.2.24",
